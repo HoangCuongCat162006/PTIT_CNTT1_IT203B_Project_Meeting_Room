@@ -5,19 +5,15 @@ public class Service {
     private String serviceName;
     private String description;
     private double price;
-    private String createdAt;
-    private String updatedAt;
 
     public Service() {
     }
 
-    public Service(int serviceId, String serviceName, String description, double price, String createdAt, String updatedAt) {
+    public Service(int serviceId, String serviceName, String description, double price) {
         this.serviceId = serviceId;
         this.serviceName = serviceName;
         this.description = description;
         this.price = price;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
     }
 
     public int getServiceId() {
@@ -52,19 +48,9 @@ public class Service {
         this.price = price;
     }
 
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
     public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public String getUpdatedAt() {
-        return updatedAt;
     }
 
     public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
     }
 }

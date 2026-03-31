@@ -1,4 +1,4 @@
-package Project.dao;
+package Project.dao.impl;
 
 import Project.model.User;
 

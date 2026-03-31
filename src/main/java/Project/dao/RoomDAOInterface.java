@@ -14,4 +14,14 @@ public interface RoomDAOInterface {
     Room getRoomById(int roomId);
 
     List<Room> getAllRooms();
+
+    List<Room> getAvailableRooms(String startTime, String endTime);
+
+    List<Room> searchRoomsByName(String keyword);
+
+    boolean roomNameExists(String roomName);
+
+    boolean roomNameExistsExceptId(String roomName, int roomId);
+
+    boolean hasBookingReference(int roomId);
 }

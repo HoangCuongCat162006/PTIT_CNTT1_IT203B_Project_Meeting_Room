@@ -6,8 +6,18 @@ import java.util.List;
 
 public interface UserServiceInterface {
     boolean registerEmployee(String username, String password, String email, String phone);
+
     User login(String username, String password);
+
     boolean createSupportStaff(String username, String password, String email, String phone);
+
+    boolean createAdmin(String username, String password, String email, String phone);
+
     void ensureDefaultAdmin();
+
     List<User> getAllUsers();
+
+    List<User> getUsersByRole(String role);
+
+    User getUserById(int userId);
 }

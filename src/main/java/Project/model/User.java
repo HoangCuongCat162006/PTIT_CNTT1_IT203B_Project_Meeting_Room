@@ -7,21 +7,17 @@ public class User {
     private String email;
     private String phone;
     private String role;
-    private String createdAt;
-    private String updatedAt;
 
     public User() {
     }
 
-    public User(int userId, String username, String password, String email, String phone, String role, String createdAt, String updatedAt) {
+    public User(int userId, String username, String password, String email, String phone, String role) {
         this.userId = userId;
         this.username = username;
         this.password = password;
         this.email = email;
         this.phone = phone;
         this.role = role;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
     }
 
     public int getUserId() {
@@ -72,30 +68,10 @@ public class User {
         this.role = role;
     }
 
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
     public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
-    }
 
-    public String getUpdatedAt() {
-        return updatedAt;
     }
 
     public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", username='" + username + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", role='" + role + '\'' +
-                '}';
     }
 }

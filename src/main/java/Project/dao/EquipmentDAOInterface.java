@@ -9,5 +9,17 @@ public interface EquipmentDAOInterface {
 
     Equipment getEquipmentById(int equipmentId);
 
+    boolean addEquipment(Equipment equipment);
+
+    boolean updateEquipment(Equipment equipment);
+
+    boolean deleteEquipment(int equipmentId);
+
     boolean updateAvailableQuantity(int equipmentId, int availableQuantity);
+
+    boolean equipmentNameExists(String equipmentName);
+
+    boolean equipmentNameExistsExceptId(String equipmentName, int equipmentId);
+
+    boolean hasBookingReference(int equipmentId);
 }

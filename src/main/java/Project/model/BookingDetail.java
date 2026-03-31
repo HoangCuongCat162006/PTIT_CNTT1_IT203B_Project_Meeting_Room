@@ -9,13 +9,6 @@ public class BookingDetail {
     public BookingDetail() {
     }
 
-    public BookingDetail(int bookingDetailId, int bookingId, Integer equipmentId, Integer serviceId) {
-        this.bookingDetailId = bookingDetailId;
-        this.bookingId = bookingId;
-        this.equipmentId = equipmentId;
-        this.serviceId = serviceId;
-    }
-
     public int getBookingDetailId() {
         return bookingDetailId;
     }

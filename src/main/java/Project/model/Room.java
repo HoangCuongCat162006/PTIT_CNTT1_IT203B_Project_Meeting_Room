@@ -6,20 +6,16 @@ public class Room {
     private int capacity;
     private String location;
     private String fixedEquipment;
-    private String createdAt;
-    private String updatedAt;
 
     public Room() {
     }
 
-    public Room(int roomId, String roomName, int capacity, String location, String fixedEquipment, String createdAt, String updatedAt) {
+    public Room(int roomId, String roomName, int capacity, String location, String fixedEquipment) {
         this.roomId = roomId;
         this.roomName = roomName;
         this.capacity = capacity;
         this.location = location;
         this.fixedEquipment = fixedEquipment;
-        this.createdAt = createdAt;
-        this.updatedAt = updatedAt;
     }
 
     public int getRoomId() {
@@ -60,32 +56,5 @@ public class Room {
 
     public void setFixedEquipment(String fixedEquipment) {
         this.fixedEquipment = fixedEquipment;
-    }
-
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public String getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-    @Override
-    public String toString() {
-        return "Room{" +
-                "roomId=" + roomId +
-                ", roomName='" + roomName + '\'' +
-                ", capacity=" + capacity +
-                ", location='" + location + '\'' +
-                ", fixedEquipment='" + fixedEquipment + '\'' +
-                '}';
     }
 }
